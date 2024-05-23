@@ -48,10 +48,8 @@ function addRecipesToDocument(recipes) {
 	//            each <recipe-card> with that recipe data using element.data = ...
 	//            Append each element to <main>
 	for(let i = 0; i < recipes.length; i++) {
-		console.log(recipes[i]);
 		let recipeCard = document.createElement('recipe-card');
 		recipeCard.data = recipes[i];
-		console.log(recipeCard);
 		main.appendChild(recipeCard);
 	}
 }
@@ -94,7 +92,6 @@ function initFormHandler() {
 		let recipeCard = document.createElement('recipe-card');
 		// B7. TODO - Add the recipeObject data to <recipe-card> using element.data
 		recipeCard.data = recipeObject;
-		console.log(recipeCard);
 		// B8. TODO - Append this new <recipe-card> to <main>
 		const main = document.querySelector('main');
 		main.appendChild(recipeCard);
